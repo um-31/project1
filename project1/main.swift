@@ -8,6 +8,5 @@
 
 import Foundation
 print("Udhay")
-print("Mahajan")
 print("Hello, World!")
 
