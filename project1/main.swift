@@ -142,12 +142,12 @@ ss["Tuple"] = (100,200)
 
 for temp in ss{
     if temp.value is Int{
-        print("I am Integer \(temp)")
+        print("I am Integer \(temp.value)")
     }else if(temp.value is String){
-        print("I am String \(temp)")
+        print("I am String \(temp.value)")
     }else if(temp.value is Dictionary<String,String>){
-        print("I am Dictionary \(temp)")
+        print("I am Dictionary \(temp.value)")
     }else if(temp.value is (Int,Int)){
-        print("I am Tuple \(temp)")
+        print("I am Tuple \(temp.value)")
     }
 }
