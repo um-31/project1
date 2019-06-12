@@ -85,3 +85,50 @@ print("======================")
 //printN(n: 5)
 print(printSum(n: 5))
 print(revArray(arr: country, index: country.count-1))
+
+var countryDictionary = ["IND":"India","CAD":"Canada","USA":"Unitted States"]
+
+print(countryDictionary)
+print(countryDictionary["USA"])
+print(countryDictionary["USA"]!)
+print(countryDictionary["PAK"] ?? "Country does not exists")
+
+if let c = countryDictionary["PAK"]{
+    print(c)
+}
+
+countryDictionary["PAK"] = "Pakistan"
+
+print("=========================")
+
+for (k, v) in countryDictionary{
+    print(k, v)
+}
+
+var mySet = Set<String>()
+
+mySet.insert("India")
+mySet.insert("Canada")
+mySet.insert("USA")
+mySet.insert("Australia")
+
+var mySet2 = Set<String>()
+
+mySet2.insert("India")
+mySet2.insert("Pakistan")
+mySet2.insert("China")
+
+let interSet = mySet.intersection(mySet2)
+print(interSet)
+
+let unionSet = mySet.union(mySet2)
+print(unionSet)
+
+let disJointSet = mySet.isDisjoint(with: mySet2)
+print(disJointSet)
+
+let subSet = mySet.subtracting(mySet2)
+print(subSet)
+
+let symetricSet = mySet.symmetricDifference(mySet2)
+print(symetricSet)
