@@ -132,3 +132,22 @@ print(subSet)
 
 let symetricSet = mySet.symmetricDifference(mySet2)
 print(symetricSet)
+
+var ss = Dictionary<String, Any>()
+
+ss["Int"] = 10
+ss["String"] = "Udhay"
+ss["Dic"] = ["k":"v","k1":"v"]
+ss["Tuple"] = (100,200)
+
+for temp in ss{
+    if temp.value is Int{
+        print("I am Integer \(temp)")
+    }else if(temp.value is String){
+        print("I am String \(temp)")
+    }else if(temp.value is Dictionary<String,String>){
+        print("I am Dictionary \(temp)")
+    }else if(temp.value is (Int,Int)){
+        print("I am Tuple \(temp)")
+    }
+}
